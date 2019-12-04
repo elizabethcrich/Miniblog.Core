@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<post>
+  <title>Test Images</title>
+  <slug>test-images</slug>
+  <pubDate>2019-12-04T20:46:21.412Z</pubDate>
+  <lastModified>2019-12-04T20:47:36.205Z</lastModified>
+  <excerpt>Testing images...</excerpt>
+  <content>&lt;p&gt;What do images look like?&lt;/p&gt;
+&lt;p&gt;&lt;img src="/Posts/files/42363516155_225b676e29_k_637110891814957131.jpg" alt="42363516155_225b676e29_k.jpg" width="600" height="338" /&gt;&lt;/p&gt;
+&lt;p&gt;Neat.&lt;/p&gt;
+&lt;p&gt;How are they stored?&lt;/p&gt;
+&lt;p&gt;&lt;img src="/Posts/files/29397750518_e9f18ea98c_k_637110891815611476.jpg" alt="29397750518_e9f18ea98c_k.jpg" width="600" height="338" /&gt;&lt;/p&gt;
+&lt;p&gt;Edit:&lt;/p&gt;
+&lt;p&gt;Posts and images are stored under Posts! No database needed!&lt;/p&gt;</content>
+  <ispublished>true</ispublished>
+  <categories>
+    <category>test</category>
+    <category>miniblog</category>
+  </categories>
+  <comments></comments>
+</post>

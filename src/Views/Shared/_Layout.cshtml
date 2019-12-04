@@ -16,6 +16,7 @@
     <noscript><link rel="stylesheet" href="~/css/belowthefold.scss" /></noscript>
     @RenderSection("Preload", required: false)
     <link rel="stylesheet" href="~/css/abovethefold.scss" inline />
+    <link rel="stylesheet" href="~/css/customlayout.css" inline />
 
     <meta property="og:type" content="article" />
     <meta property="og:title" content="@ViewData["Title"]" />
@@ -42,6 +43,13 @@
         <div class="container">
             <p itemprop="name"><a href="~/">@manifest.Name</a></p>
             By <span itemprop="author">@settings.Value.Owner</span>
+            
+            <nav>
+                <ul>
+                    <li><a href="/blog/category/test">Test</a></li>
+                    <li><a href="/blog/category/miniblog">Miniblog</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
