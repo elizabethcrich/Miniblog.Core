@@ -1,4 +1,15 @@
-﻿.siteheader nav {
+﻿
+/*************************
+    
+    All Site Customizations
+
+*************************/
+
+/*
+    Layout
+*/
+
+.siteheader nav {
     /*background-color:#bbfbff;*/
     /*text-align:left;*/
     border-top:1px solid black;
@@ -28,3 +39,12 @@
 body{
     background-color:#eaeaea;
 }*/
+
+
+/*
+    Page
+*/
+
+.page p {
+    margin: 5px 0 10px;
+}
