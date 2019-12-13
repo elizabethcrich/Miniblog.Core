@@ -1,0 +1,68 @@
+﻿
+/*************************
+    
+    All Site Customizations
+
+*************************/
+
+/*
+    All
+*/
+.uppercase {
+    text-transform: uppercase;
+}
+
+/*
+    Layout
+*/
+.banner {
+    background-image: url("/img/banner.jpg");
+    background-repeat: no-repeat;
+    height: 149px;
+    padding-right: 10px;
+}
+    .banner, .banner a {
+        color: #ffffff;
+        text-shadow: 3px 3px 3px #000;
+    }
+.sitedescription {
+    font-size: 0.55em;
+}
+.siteheader nav {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
+.siteheader nav ul {
+    list-style: none;
+}
+.siteheader nav ul li {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: bold;
+}
+.siteheader nav ul li a:hover {
+    color: #00464a;
+}
+    nav ul li a:hover {
+        text-decoration:underline;
+    }
+
+
+/*
+    Category Index
+*/
+.post > div img{
+    padding: .5em 0;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+
+/*
+    Page
+*/
+.page p {
+    margin: 5px 0 10px;
+}

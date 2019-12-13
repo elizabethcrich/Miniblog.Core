@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<post>
+  <title>Test new images</title>
+  <slug>new-images</slug>
+  <pubDate>2019-12-13T16:05:30.372Z</pubDate>
+  <lastModified>2019-12-13T16:31:02.969Z</lastModified>
+  <excerpt>Looking for full width images</excerpt>
+  <content>&lt;p&gt;Do these expand to the full width of the post?&lt;/p&gt;
+&lt;p&gt;700px&lt;/p&gt;
+&lt;p&gt;&lt;img src="/Posts/files/IMG_20190811_142706_637118499304071468.jpg" alt="IMG_20190811_142706.jpg" width="700" height="525" /&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="text-decoration: line-through;"&gt;Try a tall image...&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Try a small image...&lt;/p&gt;
+&lt;p&gt;&lt;img src="/Posts/files/IMG_20190815_174816_637118513429984667.jpg" alt="IMG_20190815_174816.jpg" width="200" height="150" /&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Try a bigger image...&lt;/p&gt;
+&lt;p&gt;&lt;img src="/Posts/files/IMG_20190812_044900_637118513934595359.jpg" alt="IMG_20190812_044900.jpg" width="400" height="300" /&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Try tall image again... maybe not quite so tall.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/Posts/files/IMG_20190811_160240_637118514629586910.jpg" alt="IMG_20190811_160240.jpg" width="375" height="500" /&gt;&lt;/p&gt;</content>
+  <ispublished>true</ispublished>
+  <categories>
+    <category>test</category>
+  </categories>
+  <comments></comments>
+</post>

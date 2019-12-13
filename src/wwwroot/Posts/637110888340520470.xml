@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<post>
+  <title>Test Post</title>
+  <slug>test-post</slug>
+  <pubDate>2019-12-04T20:41:43.544Z</pubDate>
+  <lastModified>2019-12-04T20:41:43.587Z</lastModified>
+  <excerpt>Testing</excerpt>
+  <content>&lt;h1&gt;Testing Miniblog.Core.&lt;/h1&gt;
+&lt;p&gt;Testing a &lt;strong&gt;blog post&lt;/strong&gt;.&lt;/p&gt;</content>
+  <ispublished>true</ispublished>
+  <categories>
+    <category>miniblog</category>
+  </categories>
+  <comments></comments>
+</post>

@@ -39,14 +39,14 @@ namespace Miniblog.Core.Controllers
 
         [Route("/blog/category/{category}/{page:int?}")]
         [OutputCache(Profile = "default")]
-        public async Task<IActionResult> Category(string category, int page = 0)
+        public async Task<IActionResult> Category(string category, int page = 0)//return list of posts in category here
         {
             var posts = (await _blog.GetPostsByCategory(category)).Skip(_settings.Value.PostsPerPage * page).Take(_settings.Value.PostsPerPage);
-            ViewData["Title"] = _manifest.Name + " " + category;
-            ViewData["Description"] = $"Articles posted in the {category} category";
+            ViewData["Title"] = _manifest.Name + " " + category.Substring(0,1).ToUpper() + category.Substring(1);
+            ViewData["Description"] = $"Articles posted in the {category} category.";
             ViewData["prev"] = $"/blog/category/{category}/{page + 1}/";
             ViewData["next"] = $"/blog/category/{category}/{(page <= 1 ? null : page - 1 + "/")}";
-            return View("~/Views/Blog/Index.cshtml", posts);
+            return View("~/Views/Blog/CategoryPostIndex.cshtml", posts);
         }
 
         // This is for redirecting potential existing URLs from the old Miniblog URL format
