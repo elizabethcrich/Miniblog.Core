@@ -8,7 +8,6 @@
 /*
     Layout
 */
-
 .siteheader nav {
     /*background-color:#bbfbff;*/
     /*text-align:left;*/
@@ -23,7 +22,7 @@
     display: inline-block;
     text-transform: uppercase;
     font-size: 1rem;
-    padding: 10px 5px;
+    padding: 10px;
     font-weight: bold;
 }
 .siteheader nav ul li a {
@@ -32,19 +31,21 @@
     nav ul li a:hover {
         text-decoration:underline;
     }
-/*.container{
-    background-color:#ffffff;
-    box-shadow:#000000 10px 10px;
+
+
+/*
+    Category Index
+*/
+.post > div img{
+    padding: .5em 0;
+    max-width: 700px;
+    max-height: 700px;
 }
-body{
-    background-color:#eaeaea;
-}*/
 
 
 /*
     Page
 */
-
 .page p {
     margin: 5px 0 10px;
 }
