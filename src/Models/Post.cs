@@ -104,5 +104,33 @@ namespace Miniblog.Core.Models
             }
             return result;
         }
+
+        public string GetPreviewImage()
+        {
+            var result = Content;
+            var image = "";
+
+            // Set up lazy loading of images/iframes
+            if (!string.IsNullOrEmpty(result))
+            {
+                var pattern = "(<img.*?)(src=[\\\"|'])(?<src>.*?)([\\\"|'].*?[/]?>)";
+                image = Regex.Match(result, pattern).ToString();
+
+                //// Set up lazy loading of images/iframes
+                //var replacement = " src=\"data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==\" data-src=\"";
+                //var pattern = "(<img.*?)(src=[\\\"|'])(?<src>.*?)([\\\"|'].*?[/]?>)";
+                //result = Regex.Replace(result, pattern, m => m.Groups[1].Value + replacement + m.Groups[4].Value + m.Groups[3].Value);
+            }
+
+            if (!string.IsNullOrEmpty(image))
+            {
+                return image;
+            }
+            else
+            {
+                return null;
+            }
+            
+        }
     }
 }

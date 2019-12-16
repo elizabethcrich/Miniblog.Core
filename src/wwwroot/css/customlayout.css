@@ -1,0 +1,86 @@
+﻿
+/*************************
+    
+    All Site Customizations
+
+*************************/
+
+/*
+    All
+*/
+.uppercase {
+    text-transform: uppercase;
+}
+
+/*
+    Layout
+*/
+
+/* Styles for all screen sizes */
+.sitedescription {
+    font-size: 0.55em;
+}
+
+.siteheader nav {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
+.siteheader nav ul {
+    list-style: none;
+}
+.siteheader nav ul li {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: bold;
+}
+.siteheader nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for screens over 600px */
+@media only screen and (min-width: 600px) {
+    .banner {
+        background-image: url("/img/banner.jpg");
+        background-repeat: no-repeat;
+        height: 149px;
+        padding-right: 10px;
+    }
+    .banner, .banner a {
+        color: #ffffff;
+        text-shadow: 3px 3px 3px #000;
+    }
+}
+
+/* Styles for screens under 600px */
+@media only screen and (max-width: 600px) {
+    .siteheader .container {
+        padding: 0;
+    }
+}
+
+
+/*
+    Posts
+*/
+/* Do not change min-width of 740px.
+   It accounts for post container and padding. */
+@media only screen and (min-width: 740px) {
+    .post > div img {
+        padding: .5em 0;
+        max-width: 693px;
+        max-height: 500px;
+    }
+}
+.catlink {
+    margin-top:10px;
+}
+
+
+/*
+    Page
+*/
+.page p {
+    margin: 5px 0 10px;
+}

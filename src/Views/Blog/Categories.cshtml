@@ -1,0 +1,12 @@
+﻿@model IEnumerable<string>
+@inject IOptionsSnapshot<BlogSettings> settings
+
+<div class="container">
+    <h1>All topics, interesting or not.</h1>
+    <p>Click one to see posts in that category.</p>
+
+    @foreach (var cat in Model)
+    {
+        <p class="catlink"><a href="/blog/category/@cat">@(cat.Substring(0, 1).ToUpper() + cat.Substring(1))</a></p>
+    }
+</div>
