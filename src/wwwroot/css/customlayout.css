@@ -18,7 +18,7 @@
 
 /* Styles for all screen sizes */
 .sitedescription {
-    font-size: 0.55em;
+    font-size: 0.65em;
 }
 
 .siteheader nav {
@@ -81,6 +81,12 @@
 /*
     Page
 */
+.page {
+    padding-bottom:20px;
+}
 .page p {
     margin: 5px 0 10px;
+}
+.page img {
+    margin: 10px 0 5px;
 }
