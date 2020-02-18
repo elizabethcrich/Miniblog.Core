@@ -16,6 +16,7 @@
     <noscript><link rel="stylesheet" href="~/css/belowthefold.scss" /></noscript>
     @RenderSection("Preload", required: false)
     <link rel="stylesheet" href="~/css/abovethefold.scss" inline />
+    <link rel="stylesheet" href="~/css/customlayout.css" inline />
 
     <meta property="og:type" content="article" />
     <meta property="og:title" content="@ViewData["Title"]" />
@@ -40,8 +41,24 @@
 
     <header class="siteheader">
         <div class="container">
-            <p itemprop="name"><a href="~/">@manifest.Name</a></p>
-            By <span itemprop="author">@settings.Value.Owner</span>
+            <div class="banner">
+                <p itemprop="name" class="uppercase"><a href="~/">@manifest.Name</a></p>
+                <br /><br />
+                <span class="sitedescription">@manifest.Description</span>
+            </div>
+            
+            <nav>
+                <ul class="uppercase">
+                    @foreach (var cat in manifest.Categories)
+                    {
+                        <li class="hide-sm"><a href="/blog/category/@cat">@cat</a></li>
+                    }
+                    <li><a href="/blog/categories">All The Things</a></li>
+                    @*<li><a href="https://www.youtube.com/channel/UCNMFxbaRjYUZPtPqZI7QvJA" target="_blank">YouTube</a></li>*@
+                    <li><a href="/home/about">About Me</a></li>
+                    <li class="hide-sm"><a href="~/">Home</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -71,6 +88,9 @@
                     }
                 </ul>
             </nav>
+            <p class="author">
+                By <span itemprop="author">@settings.Value.Owner</span>
+            </p>
             <p>
                 Powered by <a href="https://github.com/madskristensen/Miniblog.Core" rel="noopener noreferrer" target="_blank">Miniblog.Core</a>
             </p>
