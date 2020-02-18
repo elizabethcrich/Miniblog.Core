@@ -17,8 +17,10 @@
   "display": "standalone",
   "start_url": "/",
   "categories": [
-    "adventures",
-    "gear",
-    "code"
+    //"pct"
+    //"travel"
+    //"adventures",
+    //"gear",
+    //"code"
   ]
 }

@@ -43,7 +43,6 @@
         <div class="container">
             <div class="banner">
                 <p itemprop="name" class="uppercase"><a href="~/">@manifest.Name</a></p>
-                By <span itemprop="author">@settings.Value.Owner</span>
                 <br /><br />
                 <span class="sitedescription">@manifest.Description</span>
             </div>
@@ -52,10 +51,12 @@
                 <ul class="uppercase">
                     @foreach (var cat in manifest.Categories)
                     {
-                        <li><a href="/blog/category/@cat">@cat</a></li>
+                        <li class="hide-sm"><a href="/blog/category/@cat">@cat</a></li>
                     }
-                    <li><a href="/blog/categories">All Topics</a></li>
-                    <li><a href="/home/about">About</a></li>
+                    <li><a href="/blog/categories">All The Things</a></li>
+                    @*<li><a href="https://www.youtube.com/channel/UCNMFxbaRjYUZPtPqZI7QvJA" target="_blank">YouTube</a></li>*@
+                    <li><a href="/home/about">About Me</a></li>
+                    <li class="hide-sm"><a href="~/">Home</a></li>
                 </ul>
             </nav>
         </div>
@@ -87,6 +88,9 @@
                     }
                 </ul>
             </nav>
+            <p class="author">
+                By <span itemprop="author">@settings.Value.Owner</span>
+            </p>
             <p>
                 Powered by <a href="https://github.com/madskristensen/Miniblog.Core" rel="noopener noreferrer" target="_blank">Miniblog.Core</a>
             </p>
